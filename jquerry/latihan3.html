@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Effect -Fading</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$ (document) .ready(function() {
+			$("button") .click(function () {
+				$("#div1") .fadeToggle();
+				$("#div2") .fadeToggle("slow");
+				$("#div3") .fadeToggle(300);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>fadeToggle().</p>
+	<button> fade in/out boxes</button><br><br>
+	<div id="div1" style="width:80px;height:80px;background-color: red;"></div>
+	<div id="div2" style="width:80px;height:80px;background-color: pink;"></div>
+	<div id="div3" style="width:80px;height:80px;background-color: blue;"></div>
+</body>
+</html>
